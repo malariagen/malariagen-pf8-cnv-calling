@@ -1,0 +1,5 @@
+Sample	Chloroquine	Pyrimethamine	Sulfadoxine	Mefloquine	Artemisinin	Piperaquine	SP (uncomplicated)	SP (IPTp)	AS-MQ	DHA-PPQ	HRP2	HRP3	HRP2 and HRP3
+FP0008-C	Undetermined	Undetermined	Undetermined	Sensitive	Sensitive	Sensitive	Sensitive	Sensitive	Sensitive	Sensitive	nodel	nodel	nodel
+FP0009-C	Resistant	Resistant	Sensitive	Sensitive	Sensitive	Sensitive	Resistant	Sensitive	Sensitive	Sensitive	nodel	nodel	nodel
+FP0010-CW	Undetermined	Resistant	Resistant	Sensitive	Sensitive	Sensitive	Resistant	Sensitive	Sensitive	Sensitive	uncallable	uncallable	uncallable
+[...]

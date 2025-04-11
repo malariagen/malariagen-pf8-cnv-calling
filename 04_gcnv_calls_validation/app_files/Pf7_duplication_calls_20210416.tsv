@@ -1,0 +1,5 @@
+Sample	pm2_depth_only	pm2_faceaway_only	pm2_dup_call	pm2_breakpoint	mdr1_depth_only	mdr1_faceaway_only	mdr1_dup_call	mdr1_breakpoint
+FP0008-C	0	0	0		0	0	0	
+FP0009-C	0	0	0		0	0	0	
+FP0010-CW	-1	0	0		-1	0	0
+[...]

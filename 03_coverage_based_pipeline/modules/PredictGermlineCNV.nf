@@ -1,0 +1,62 @@
+process PredictGermlineCNV {
+    // Use the previously trained contig gCNV model and contig ploidy calls to make gCNV calls.
+    
+    input:        
+        tuple val(cluster),
+              val(meta)
+    
+    output:
+        tuple val (cluster),
+              val (meta),
+              path("test-${cluster}-gcnv-calls")
+
+    script:
+        def input_flag_concatenated_readcount_paths = meta.partition_of_sample_metas.collect{ it.PATH_TO_READCOUNTS }.join(" --input ")
+        def java_Xmx = task.memory.mega-200
+
+        """
+        mkdir -p tmp
+        
+        THEANO_FLAGS="base_compiledir=tmp" gatk GermlineCNVCaller \
+            --java-options          "-Xmx${java_Xmx}m" \
+            --tmp-dir               tmp \
+            --run-mode              CASE \
+            --model                 ${meta.gcnv_model} \
+            --contig-ploidy-calls   ${meta.contig_ploidy_calls} \
+            --input                 ${input_flag_concatenated_readcount_paths} \
+            --output-prefix         "test-${cluster}-gcnv" \
+            --interval-merging-rule OVERLAPPING_ONLY \
+            --output                . \
+            --verbosity             DEBUG \
+            --p-alt                                  ${params.gcnv_model_p_alt} \
+            --cnv-coherence-length                   ${params.gcnv_model_cnv_coherence_length} \
+            --max-copy-number                        ${params.gcnv_model_max_copy_number} \
+            --mapping-error-rate                     ${params.gcnv_model_mapping_error_rate} \
+            --sample-psi-scale                       ${params.gcnv_model_sample_psi_scale} \
+            --depth-correction-tau                   ${params.gcnv_model_depth_correction_tau} \
+            --copy-number-posterior-expectation-mode ${params.gcnv_model_copy_number_posterior_expectation_mode} \
+            --active-class-padding-hybrid-mode       ${params.gcnv_model_active_class_padding_hybrid_mode} \
+            --learning-rate                          ${params.gcnv_inference_learning_rate} \
+            --adamax-beta-1                          ${params.gcnv_inference_adamax_beta_1} \
+            --adamax-beta-2                          ${params.gcnv_inference_adamax_beta_2} \
+            --log-emission-samples-per-round         ${params.gcnv_inference_log_emission_samples_per_round} \
+            --log-emission-sampling-median-rel-error ${params.gcnv_inference_log_emission_sampling_median_rel_error} \
+            --log-emission-sampling-rounds           ${params.gcnv_inference_log_emission_sampling_rounds} \
+            --max-advi-iter-first-epoch              ${params.gcnv_inference_max_advi_iter_first_epoch} \
+            --max-advi-iter-subsequent-epochs        ${params.gcnv_inference_max_advi_iter_subsequent_epochs} \
+            --min-training-epochs                    ${params.gcnv_inference_min_training_epochs} \
+            --max-training-epochs                    ${params.gcnv_inference_max_training_epochs} \
+            --initial-temperature                    ${params.gcnv_inference_initial_temperature} \
+            --num-thermal-advi-iters                 ${params.gcnv_inference_num_thermal_advi_iters} \
+            --convergence-snr-averaging-window       ${params.gcnv_inference_convergence_snr_averaging_window} \
+            --convergence-snr-trigger-threshold      ${params.gcnv_inference_convergence_snr_trigger_threshold} \
+            --convergence-snr-countdown-window       ${params.gcnv_inference_convergence_snr_countdown_window} \
+            --max-calling-iters                      ${params.gcnv_inference_max_calling_iters} \
+            --caller-update-convergence-threshold    ${params.gcnv_inference_caller_update_convergence_threshold} \
+            --caller-internal-admixing-rate          ${params.gcnv_inference_caller_internal_admixing_rate} \
+            --caller-external-admixing-rate          ${params.gcnv_inference_caller_external_admixing_rate} \
+            --disable-annealing                      ${params.gcnv_inference_disable_annealing}
+        
+        rm -rf tmp
+        """
+}

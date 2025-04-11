@@ -1,0 +1,5 @@
+SAMPLE	PATH_TO_READCOUNTS	IN_TRAINING_SET	CLUSTER	PATH_TO_PRETRAINED_CONTIG_PLOIDY_MODEL	PATH_TO_PRETRAINED_GCNV_MODEL
+FP0008-C	<INSERT PATH HERE>/malariagen-pf8-cnv-calling/assets_pf8/01_execution/readcounts/FP0008-C.counts.tsv	False	gDNA_MDA	.	.
+FP0009-C	<INSERT PATH HERE>/malariagen-pf8-cnv-calling/assets_pf8/01_execution/readcounts/FP0009-C.counts.tsv	False	gDNA_MDA	.	.
+FP0010-CW	<INSERT PATH HERE>/malariagen-pf8-cnv-calling/assets_pf8/01_execution/readcounts/FP0010-CW.counts.tsv	False	sWGA	.	.
+[...]

@@ -1,0 +1,6 @@
+chrom	first_breakpoint_start	first_breakpoint_end	second_breakpoint_start	second_breakpoint_end	third_breakpoint_start	third_breakpoint_end	fourth_breakpoint_start	fourth_breakpoint_end	first_gene_id	second_gene_id	third_gene_id	fourth_gene_id	breakpoint_name	breakpoint_id	target_gene	use	note
+Pf3D7_05_v3	928340	928359	938911	938930	964505	964532	985396	985423	PF3D7_0522400	PF3D7_0522600	PF3D7_0523100	PF3D7_0523700	57kb dup-trpinv-dup MDR1	PfMDR1_DTD_1	MDR1	1	
+Pf3D7_05_v3	948197	948217	948453	948471	964505	964540	980012	980040					32kb dup-trpinv-dup MDR1	PfMDR1_DTD_2	MDR1	1	
+Pf3D7_12_v3	929743	929759	940895	940912	978164	978191	980075	980103					50kb dup-trpinv-dup GCH1	PfGCH1_DTD_1	GCH1	1	
+Pf3D7_12_v3	938785	938805	968847	968881	977926	977949	980363	980386					42kb dup-trpinv-dup GCH1	PfGCH1_DTD_2	GCH1	1	
+Pf3D7_12_v3	971147	971178	971233	971251	976399	976426	976456	976503					5kb dup-trpinv-dup GCH1	PfGCH1_DTD_3	GCH1	1	

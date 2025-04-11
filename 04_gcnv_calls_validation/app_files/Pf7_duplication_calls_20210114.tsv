@@ -1,0 +1,5 @@
+Sample	Ncnv	pm2_min_reads	pm2_hmm_only	pm2_faceaway_only	pm2_dup_call	mdr1_min_reads	mdr1_hmm_only	mdr1_faceaway_only	mdr1_dup_call	gch1_min_reads	gch1_hmm_only	gch1_faceaway_only	gch1_dup_call
+FP0008-C	3.5	281	0	0	0	42	0	0	0	77	0	0	0
+FP0009-C	1.0	983	0	0	0	140	0	0	0	246	0	0	0
+FP0010-CW	63.0	111	-1	0	0	44	-1	0	0	377	-1	0	0
+[...]

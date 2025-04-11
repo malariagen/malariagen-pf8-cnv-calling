@@ -1,0 +1,5 @@
+Sample	Study	Country	Admin level 1	Country latitude	Country longitude	Admin level 1 latitude	Admin level 1 longitude	Year	ENA	All samples same case	Population	% callable	QC pass	Exclusion reason	Sample type	Sample was in Pf7
+FP0008-C	1147-PF-MR-CONWAY	Mauritania	Hodh el Gharbi	20.265148923931456	-10.337092942822744	16.56542590907422	-9.832345292162776	2014.0	ERR1081237	FP0008-C	AF-W	82.48	True	Analysis_set	gDNA	True
+FP0009-C	1147-PF-MR-CONWAY	Mauritania	Hodh el Gharbi	20.265148923931456	-10.337092942822744	16.56542590907422	-9.832345292162776	2014.0	ERR1081238	FP0009-C	AF-W	88.95	True	Analysis_set	gDNA	True
+FP0010-CW	1147-PF-MR-CONWAY	Mauritania	Hodh el Gharbi	20.265148923931456	-10.337092942822744	16.56542590907422	-9.832345292162776	2014.0	ERR2889621	FP0010-CW	AF-W	87.01	True	Analysis_set	sWGA	True
+[...]

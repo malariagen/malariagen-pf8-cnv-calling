@@ -1,0 +1,13 @@
+igv_notebook==0.6.1
+ipykernel==6.29.4
+matplotlib==3.8.4
+numpy==1.26.4
+openpyxl==3.1.5
+pandas==2.2.2
+petl==1.7.15
+plotly==5.22.0
+pysam==0.23.0
+scikit-learn==1.4.2
+scipy==1.14.1
+streamlit==1.39.0
+tqdm==4.66.4

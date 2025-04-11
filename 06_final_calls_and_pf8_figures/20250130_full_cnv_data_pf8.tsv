@@ -1,0 +1,5 @@
+Sample	CRT_uncurated_coverage_only	CRT_curated_coverage_only	CRT_breakpoint	CRT_faceaway_only	CRT_final_amplification_call	GCH1_uncurated_coverage_only	GCH1_curated_coverage_only	GCH1_breakpoint	GCH1_faceaway_only	GCH1_final_amplification_call	MDR1_uncurated_coverage_only	MDR1_curated_coverage_only	MDR1_breakpoint	MDR1_faceaway_only	MDR1_final_amplification_call	PM2_PM3_uncurated_coverage_only	PM2_PM3_curated_coverage_only	PM2_PM3_breakpoint	PM2_PM3_faceaway_only	PM2_PM3_final_amplification_call	HRP2_uncurated_coverage_only	HRP2_breakpoint	HRP2_deletion_type	HRP2_final_deletion_call	HRP3_uncurated_coverage_only	HRP3_breakpoint	HRP3_deletion_type	HRP3_final_deletion_call
+FP0008-C	0	0	-	-1	0	-1	-1	-	0	0	0	0	-	0	0	0	0	-	0	0	0	-	-	0	0	-	-	0
+FP0009-C	0	0	-	0	0	0	0	-	0	0	0	0	-	0	0	0	0	-	0	0	0	-	-	0	0	-	-	0
+FP0010-CW	-1	-1	-	0	0	-1	-1	-	0	0	-1	-1	-	0	0	-1	-1	-	0	0	-1	-	-	-1	-1	-	-	-1
+[...]

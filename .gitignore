@@ -1,0 +1,11 @@
+*.ipynb_checkpoints
+*_execution*
+*.npy
+*.sif
+*.nextflow
+*work
+*.venv
+*results
+*.error
+*.output
+*samples/
