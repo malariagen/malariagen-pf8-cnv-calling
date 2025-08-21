@@ -2,6 +2,8 @@
 
 ### The code in this repo was used for making Pf8's copy number variation (CNV) calls. 
 
+Amplifications in MDR1, CRT, GCH1, plasmepsin2/3. Deletions in HRP2, HRP3. 24,409 samples. 
+
 ---
 
 ## Overview
@@ -29,7 +31,7 @@ Categorizes samples into appropriate cohorts (gDNA/sWGA) for optimal HMM trainin
 Performs the core CNV detection by training HMM models on appropriate sample cohorts and inferring copy number states across all samples.  
 
 ### 4. gCNV Calls Validation - `04_gcnv_calls_validation/`
-Converts raw coverage outputs to genotype calls, generates diagnostic plots, and facilitates manual curation of potentially low-confidence calls. 
+Converts raw coverage outputs to genotype calls, generates diagnostic plots, and facilitates manual curation of potentially low-confidence calls. Deletions were confirmed using IGV. 
 
 ### 5. Faceaway Data Generation - `05_faceaway_data_generation/`
 Identifies and characterizes breakpoint evidence for structural variants to complement coverage-based calls.  
